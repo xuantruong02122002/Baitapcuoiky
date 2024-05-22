@@ -1,0 +1,739 @@
+﻿.danhSach .w-22 .ts-wrapper {
+    padding: 1px;
+}
+
+.ts-control > input {
+    min-width: fit-content !important;
+}
+
+.ts-control {
+    border: 1px solid !important;
+    padding: 5px !important;
+}
+
+.ts-dropdown .option {
+    background-color: #fff;
+}
+
+    .ts-dropdown .option.active {
+        background-color: whitesmoke;
+    }
+
+.single .ts-control .item {
+    font-weight: 600;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    max-width: 90% !important;
+}
+
+.ts-control .item {
+    font-weight: 600;
+    margin: 5px 2.5px 0 2.5px !important;
+    margin: 0 !important;
+}
+
+.single .ts-control {
+    padding: 0;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}
+
+.multi .ts-control .item {
+    margin-right: 2px !important;
+    margin-top: 2px !important;
+}
+
+.ts-dropdown .ts-dropdown-content {
+    background: rgb(255, 255, 255);
+}
+
+.benhan .ts-control {
+    padding: 0 0.35rem;
+    border-bottom: 1px dotted;
+}
+
+.benhan .focus .ts-control {
+    background-color: #fff;
+    box-shadow: none;
+    border-color: black;
+}
+
+input.form-dot {
+    font-weight: 600;
+    color: #343a40;
+}
+
+    input.form-dot:focus {
+        background-color: #fef5e6;
+    }
+
+textarea.form-dot:focus {
+    background-color: #fef5e6 !important;
+}
+
+.ts-wrapper.focus {
+    background-color: #fef5e6 !important;
+}
+
+.ts-control input {
+    cursor: pointer;
+}
+
+/* textarea.form-dot:focus {
+  background-color: #f1f1f1;
+} */
+
+.content .form-dot {
+    padding: 0;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.form-check-label {
+}
+
+.last-td-column .btn-icon {
+    min-width: calc( var(--tblr-btn-line-height) * var(--tblr-btn-font-size) + var(--tblr-btn-padding-y) * 1 + var(--tblr-btn-border-width) * 2 );
+    min-height: calc( var(--tblr-btn-line-height) * var(--tblr-btn-font-size) + var(--tblr-btn-padding-y) + var(--tblr-btn-border-width) );
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-rows {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-dot {
+    border: none;
+    border-bottom: 1px dotted;
+    flex-grow: 1;
+    min-width: 0;
+    padding-left: 0.25rem;
+}
+
+    .form-dot:focus {
+        outline: 0;
+    }
+
+.select-dot {
+    border: none;
+    border-bottom: 1px dotted;
+    flex-grow: 1;
+    min-width: 0;
+    padding-left: 0.25rem;
+}
+
+    .select-dot:focus {
+        outline: 0;
+    }
+
+.text-dot {
+    display: flex;
+    align-items: end;
+    min-width: fit-content;
+}
+
+.boxb-1 {
+    margin-bottom: 10px;
+}
+
+    .boxb-1 > div.d-flex {
+        margin: 3px 0;
+    }
+
+.boxb-2 > div.d-flex {
+    margin: 3px 0;
+}
+
+.boxb-2 {
+    margin-bottom: 20px;
+}
+
+.w-1 {
+    width: 1%;
+}
+
+.w-2 {
+    width: 2%;
+}
+
+.w-3 {
+    width: 3%;
+}
+
+.w-4 {
+    width: 4%;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+.w-6 {
+    width: 6%;
+}
+
+.w-7 {
+    width: 7%;
+}
+
+.w-8 {
+    width: 8%;
+}
+
+.w-9 {
+    width: 9%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-11 {
+    width: 11%;
+}
+
+.w-12 {
+    width: 12%;
+}
+
+.w-13 {
+    width: 13%;
+}
+
+.w-14 {
+    width: 14%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-16 {
+    width: 16%;
+}
+
+.w-17 {
+    width: 17%;
+}
+
+.w-18 {
+    width: 18%;
+}
+
+.w-19 {
+    width: 19%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-21 {
+    width: 21%;
+}
+
+.w-22 {
+    width: 22%;
+}
+
+.w-23 {
+    width: 23%;
+}
+
+.w-24 {
+    width: 24%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-26 {
+    width: 26%;
+}
+
+.w-27 {
+    width: 27%;
+}
+
+.w-28 {
+    width: 28%;
+}
+
+.w-29 {
+    width: 29%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-31 {
+    width: 31%;
+}
+
+.w-32 {
+    width: 32%;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.w-34 {
+    width: 34%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-36 {
+    width: 36%;
+}
+
+.w-37 {
+    width: 37%;
+}
+
+.w-38 {
+    width: 38%;
+}
+
+.w-39 {
+    width: 39%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-41 {
+    width: 41%;
+}
+
+.w-42 {
+    width: 42%;
+}
+
+.w-43 {
+    width: 43%;
+}
+
+.w-44 {
+    width: 44%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.w-46 {
+    width: 46%;
+}
+
+.w-47 {
+    width: 47%;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.w-49 {
+    width: 49%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-51 {
+    width: 51%;
+}
+
+.w-52 {
+    width: 52%;
+}
+
+.w-53 {
+    width: 53%;
+}
+
+.w-54 {
+    width: 54%;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.w-56 {
+    width: 56%;
+}
+
+.w-57 {
+    width: 57%;
+}
+
+.w-58 {
+    width: 58%;
+}
+
+.w-59 {
+    width: 59%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-61 {
+    width: 61%;
+}
+
+.w-62 {
+    width: 62%;
+}
+
+.w-63 {
+    width: 63%;
+}
+
+.w-64 {
+    width: 64%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-66 {
+    width: 66%;
+}
+
+.w-67 {
+    width: 67%;
+}
+
+.w-68 {
+    width: 68%;
+}
+
+.w-69 {
+    width: 69%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-71 {
+    width: 71%;
+}
+
+.w-72 {
+    width: 72%;
+}
+
+.w-73 {
+    width: 73%;
+}
+
+.w-74 {
+    width: 74%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-76 {
+    width: 76%;
+}
+
+.w-77 {
+    width: 77%;
+}
+
+.w-78 {
+    width: 78%;
+}
+
+.w-79 {
+    width: 79%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-81 {
+    width: 81%;
+}
+
+.w-82 {
+    width: 82%;
+}
+
+.w-83 {
+    width: 83%;
+}
+
+.w-84 {
+    width: 84%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-86 {
+    width: 86%;
+}
+
+.w-87 {
+    width: 87%;
+}
+
+.w-88 {
+    width: 88%;
+}
+
+.w-89 {
+    width: 89%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-91 {
+    width: 91%;
+}
+
+.w-92 {
+    width: 92%;
+}
+
+.w-93 {
+    width: 93%;
+}
+
+.w-94 {
+    width: 94%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.w-96 {
+    width: 96%;
+}
+
+.w-97 {
+    width: 97%;
+}
+
+.w-98 {
+    width: 98%;
+}
+
+.w-99 {
+    width: 99%;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid #d2d6db;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+
+/*Input date*/
+.centered {
+    text-align: center;
+}
+
+#edit-Gioitinh, #edit-Ngaysinh, #edit-Hoten, #edit-Masv {
+    font-weight: 600;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 14px;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
+/* Add styling for the 'current' class */
+.pagination button.current {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+
+.pagination button {
+    border-radius: 15px;
+
+}
+
+
+/*on top*/
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 10px;
+}
+
+
+
+@media (min-width: 500px) {
+    .content {
+        width: 43%;
+    }
+
+    #button {
+        margin: 30px;
+    }
+}
+
+
+/*dark mode*/
+
+:root {
+    --light-0: #f8f9fa;
+    --light-1: #e9ecef;
+    --light-2: #dee2e6;
+    --dark-0: #495057;
+    --dark-1: #343a40;
+    --dark-2: #212529;
+    --green: #c3c82c;
+    --blue: #2939ff;
+}
+
+.dark-light-mode {
+    position: absolute;
+    right: 14%;
+}
+
+body.dark {
+    background: var(--dark-2);
+    color: white;
+}
+
+
+
+label {
+    align-items: center;
+    background: var(--ligth-2);
+    background: url("https://i.ibb.co/ZWmbGbj/etmfdr.gif");
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 35px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) cursor: pointer;
+    display: flex;
+    height: 60px;
+    position: relative;
+    width: 110px;
+}
+
+#toggle-button {
+    display: none;
+}
+
+#toggle-button:checked + label {
+    background: var(--dark-0);
+    background: url('https://i.pinimg.com/originals/94/ff/74/94ff7463a1574221ba6d4ada2c997e0b.gif');
+    background-position: center;
+    background-size: cover;
+}
+
+label .sun-moon {
+    background: radial-gradient(var(--green), transparent);
+    border-radius: 50%;
+    height: 30px;
+    margin: 4px;
+    transition: transform 0.3s ease;
+    width: 30px;
+}
+
+#toggle-button:checked + label .sun-moon {
+    background: radial-gradient(var(--blue), transparent);
+    transform: translateX(72px)
+}

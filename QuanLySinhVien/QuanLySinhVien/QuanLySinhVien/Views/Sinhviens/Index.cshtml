@@ -1,0 +1,201 @@
+﻿
+
+@model IEnumerable<QuanLySinhVien.Data.Sinhvien>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a id="button"></a>
+
+
+<div class="dark-light-mode">
+    <input id="toggle-button" type="checkbox">
+    <label for="toggle-button">
+        <div class="sun-moon"> </div>
+    </label>
+
+</div>
+
+
+@*
+    modal
+*@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createStudentModal">
+    <i class="bi bi-plus-lg"></i> Thêm Sinh Viên
+</button>
+
+<div class="modal fade" id="createStudentModal" tabindex="-1" aria-labelledby="createStudentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Index" id="formSaveSinhVien" method="post">
+                <div class="modal-header">
+                    <img src="./Img/add.png" width="130px"/>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Masv" name="Masv" value="" placeholder="Nhập mã sinh viên" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Hoten" name="Hoten" value="" placeholder="Nhập tên sinh viên" autocomplete="off" required>
+                    </div>
+
+
+                    <div class="form-group datepicker">
+                        <input id="Ngaysinh" name="Ngaysinh" type="text" class="form-control input-date-mask" placeholder="Nhập ngày sinh" autocomplete="off" />
+                    </div>
+                                              
+                    <div class="form-group mt-2">
+                        <select class="form-control" id="Gioitinh" name="Gioitinh">
+                            <option value="" disabled selected>==>Chọn giới tính<==</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageFile">Hình ảnh:</label>
+                        <input type="file" class="form-control" id="imageFile" name="imageFile" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <select class="form-control" id="Malop" name="Malop" >
+                            <!-- Populate options dynamically using the same options as in the original form -->
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@*end modal*@
+
+
+
+
+<div class="d-flex mt-3">
+    <select class="select-links w-20 mb-3"></select>
+</div>
+
+<div id="student-table-container" style="display:block; margin-bottom:200px"></div>
+
+
+
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Index" id="formEditSinhVien" method="post">
+                <div class="modal-header">
+                    <img src="./Img/edit.png" width="130px" />
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="edit-Masv" name="Masv" value="" placeholder="Nhập mã sinh viên" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="edit-Hoten" name="Hoten" value="" placeholder="Nhập tên sinh viên" autocomplete="off">
+                    </div>
+
+
+
+                  @*   <input id="edit-Ngaysinh"
+                           name="Ngaysinh"
+                           class="inputDate"
+                           type="date"
+                           data-date=""
+                           data-date-format="DD MMMM YYYY"
+                           value="" /> *@
+
+                 @*    <div class="input-group date" id="datepicker">
+                        <input id="edit-Ngaysinh" name="Ngaysinh" type="text" class="form-control" />
+                        <span class="input-group-append">
+                            <span class="input-group-text bg-white">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                        </span>
+                    </div> *@
+
+                    <div class="input-group datepicker">
+                        <input id="edit-Ngaysinh" name="Ngaysinh" type="text" class="form-control input-date-mask" placeholder="Nhập ngày sinh" autocomplete="off" />
+                    </div>
+
+                    <div class="form-group  mt-3">
+                        <select class="form-control" id="edit-Gioitinh" name="Gioitinh">
+                            <option value="" disabled selected>==>Chọn giới tính<==</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageFile"></label>
+                        <input type="file" class="form-control" id="imageFile" name="imageFile" accept="image/*">
+                    </div>
+
+
+                    <div class="form-group">
+                        <select class="form-control" id="edit-Malop" name="Malop">
+                            <!-- Populate options dynamically using the same options as in the original form -->
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary" id="btnLuu">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true" data-bs-delay="5000" style="position: absolute;
+    top: 0;
+    right: 0;">
+    <div class="toast-header bg-success text-white">
+        <strong class="me-auto">Thành công</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+        Sinh viên đã được thêm thành công!
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Index" id="formDeleteSinhVien" method="post">
+                <div class="modal-header">
+                    <img src="./Img/remove.png" width="130px"/>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="delete-Masv" name="Masv" disabled value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="delete-Hoten" name="Hoten" disabled value="">
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

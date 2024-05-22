@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\QuanLySinhVien",
+    "\\QuanLySinhVien\\QuanLySinhVien",
+    "\\QuanLySinhVien\\QuanLySinhVien\\bin",
+    "\\QuanLySinhVien\\QuanLySinhVien\\bin\\Debug",
+    "\\QuanLySinhVien\\QuanLySinhVien\\bin\\Release",
+    "\\QuanLySinhVien\\QuanLySinhVien\\bin\\Release\\net8.0",
+    "\\QuanLySinhVien\\QuanLySinhVien\\Controllers",
+    "\\QuanLySinhVien\\QuanLySinhVien\\Views",
+    "\\QuanLySinhVien\\QuanLySinhVien\\Views\\Sinhviens"
+  ],
+  "SelectedNode": "\\QuanLySinhVien\\QuanLySinhVien\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
